@@ -9,7 +9,6 @@ function App() {
     fetch("https://sujeitoprogramador.com/rn-api/?api=posts")
       .then((resultado) => resultado.json())
       .then((json) => {
-        console.log(json);
         setNutri(json);
       });
   }, []);
